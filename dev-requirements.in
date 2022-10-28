@@ -1,0 +1,7 @@
+flake8
+flake8-walrus
+flake8-isort
+
+
+pytest
+pytest-django
