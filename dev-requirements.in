@@ -6,3 +6,4 @@ flake8-pyproject
 
 pytest
 pytest-django
+mixer

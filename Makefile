@@ -5,3 +5,6 @@ deps:
 
 lint:
 	flake8 src
+
+test:
+	cd src && pytest
