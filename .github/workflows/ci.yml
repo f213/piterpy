@@ -1,0 +1,21 @@
+---
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10.7'
+          cache: pip
+
+      - run: pip install --upgrade pip-tools
+      - run: pip-sync dev-requirements.txt requirements.txt
+      - run: make lint
+      - run: make test
