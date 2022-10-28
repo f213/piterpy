@@ -10,6 +10,8 @@ django==3.2.16
     # via
     #   -r requirements.in
     #   djangorestframework
+django-behaviors==0.5.1
+    # via -r requirements.in
 django-environ==0.9.0
     # via -r requirements.in
 djangorestframework==3.14.0

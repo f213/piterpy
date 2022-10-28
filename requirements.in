@@ -2,3 +2,4 @@ Django<4
 djangorestframework
 django-environ
 psycopg2-binary
+django-behaviors
