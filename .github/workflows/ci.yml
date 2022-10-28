@@ -36,7 +36,6 @@ jobs:
           DATABASE_URL: postgres://postgres@localhost:5432/postgres
 
   docker:
-    needs: build
     runs-on: ubuntu-latest
     services:
       postgres:
