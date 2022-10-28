@@ -8,3 +8,14 @@ services:
       - 5432:5432
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust
+
+  #backend:
+    #image: test
+    #command: wait-for-it postgres:5432 -- /bin/sh -c "./manage.py migrate && uwsgi --master --http :8000 --module app.wsgi"
+    #ports:
+      #- 8000:8000
+    #environment:
+      #- DATABASE_URL=postgres://postgres@postgres/postgres
+      #- DEBUG=On
+    #links:
+      #- postgres

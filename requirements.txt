@@ -24,3 +24,5 @@ pytz==2022.5
     #   djangorestframework
 sqlparse==0.4.3
     # via django
+whitenoise==6.2.0
+    # via -r requirements.in
